@@ -1,0 +1,21 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: http
++ Target Port: 80
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
+- Nikto v2.1.6/2.1.5
++ Target Host: 159.203.81.45
++ Target Port: 8080
++ GET Retrieved x-powered-by header: PHP/7.1.33
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ OSVDB-3092: GET /admin/: This might be interesting...
++ OSVDB-3093: GET /admin/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
+- Nikto v2.1.6/2.1.5
++ Target Host: 159.203.81.45
++ Target Port: 8080
++ GET Retrieved x-powered-by header: PHP/7.1.33
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type

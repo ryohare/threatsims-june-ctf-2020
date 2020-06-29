@@ -1,0 +1,27 @@
+POST /login HTTP/1.1
+
+Host: 159.203.81.45
+
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Referer: http://159.203.81.45/login
+
+Content-Type: application/x-www-form-urlencoded
+
+Content-Length: 36
+
+Connection: close
+
+Cookie: JoesMessage=VFN7UGVvcGxlQ29tZVRvU2VlTWVOb3RUaGVUaWdlcnN9
+
+Upgrade-Insecure-Requests: 1
+
+
+
+username=%27+AND&password=dfdsafdsaf

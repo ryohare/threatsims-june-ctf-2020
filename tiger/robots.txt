@@ -1,0 +1,8 @@
+User-agent: BigCatRescue
+Disallow: *
+
+User-agent: TS{JeffLoweStoleAllMyTigers}
+Disallow: *
+
+User-agent: *
+Disallow: /admin
