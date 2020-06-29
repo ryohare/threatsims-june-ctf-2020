@@ -1,5 +1,5 @@
 # ctf.threatsims.com - June CTF
-This is a summary of the June CTF by threat sims and the highlights worth mentioning.
+This is a summary of the June CTF by threat sims and the highlights worth mentioning. It ran June 27-28th 9AM - 3pm (30 hours).
 # BB
 ## Gain Initial Shell Access
 The website provided had only one endpoint with a search box. Seemed SQLi was probably the entry point. Issued a request with burp, exported and used sqlmap to pull everying out of the DB
